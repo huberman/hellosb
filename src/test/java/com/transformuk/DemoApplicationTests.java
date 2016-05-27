@@ -28,4 +28,9 @@ public class DemoApplicationTests {
 	public void hamcrestMatchingWorks() {
 		assertThat(5, is(1+3+1));
 	}
+	
+	@Test
+	public void oops() {
+		assertTrue(false);
+	}
 }
