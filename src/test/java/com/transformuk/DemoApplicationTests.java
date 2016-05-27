@@ -1,5 +1,8 @@
 package com.transformuk;
 
+import static org.hamcrest.Matchers.*;
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.SpringApplicationConfiguration;
@@ -13,6 +16,16 @@ public class DemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		assertTrue(true);
 	}
 
+	@Test
+	public void arithmeticWorks() {
+		assertEquals(1+2, 3);
+	}
+	
+	@Test
+	public void hamcrestMatchingWorks() {
+		assertThat(4, is(1+3));
+	}
 }
